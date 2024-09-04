@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Program 4 - Validating password</title>
+        <script languagae="javascript">
+            function pass()
+            {
+                var pw=f.pw.value;
+                var cpw=f.cpw.value;
+                if (pw.length<6)
+                {
+                    alert("Password atleast 6 characters");
+                }
+                if(pw!=cpw)
+                {
+                    alert("Password doesn't match");
+                }
+                else if(pw.length>=6)
+                {
+                    alert("Password Validation Success");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <form name="f">
+                <table>
+                    <h2 align="center">PASSWORD VALIDATION</h2>
+                    <tr>
+                        <td align="right">PASSWORD:</td>
+                        <td><input type="password" name="pw" maxlength=20 size=30></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td align="right">CONFIRM PASSWORD:</td>
+                        <td><input type="password" name="cpw" maxlength=20 size=30></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td></td>
+                        <td><br><input type="button" value="SUBMIT" onClick="pass()"></td>
+                    </tr>
+                </table>
+                </form>
+                </center>
+                </body>
+                </html>
+
+            </form>
+        </center>
