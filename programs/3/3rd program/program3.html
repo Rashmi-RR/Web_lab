@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program 3</title>
+    </head>
+    <style>
+        body {
+            background-image: url("https://previews.123rf.com/images/dzein/dzein1509/dzein150900025/45072951-travel-and-tourism-background-with-famous-world-landmarks-in-3d-realistic-and-sketch-drawing.jpg");
+            text-align: center;
+        }
+        h1 {
+            font-size: 300%;
+            font-family: fantasy;
+            font-weight: lighter;
+            color: rgb(51, 3, 70);
+            background-color: rgba(239, 108, 195,0.85);
+            padding: 20px;
+        }
+        .textbox1 {
+            color: rgb(202, 8, 105);
+            font-size: 40px;
+            font-weight: 700;
+        }
+        input[type=text],select {
+            width: 70%;
+            padding: 10px 20px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px dashed plum;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: sky;
+        }
+    </style>
+    <body>
+        <br>
+        <h1><u>Select the name of the country to display its Capital</u></h1><br>
+     <br>
+            <form style="font-size: 275%; font-family: fantasy; color: rgb(51, 3, 70); border: 3px solid blue;margin-left:22%;margin-right:24%;padding: 30px; background-color: rgba(239, 108, 193, 0.6);text-align: justify;" name="myform">
+                <table>
+                      <tr>
+                <td>
+                    Select<br>Country: </td><td><select name="country" class="textbox1" id="sbox1" onclick="myFunction()" require>
+            <option value="" ></option>
+            <option value="NEW DELHI">INDIA</option>
+            <option value="WASHINGTON D.C">USA</option>
+            <option value="LONDON">UNITED KINGDOM</option>
+            <option value="BERLIN">GERMANY</option>
+            <option value="ABU DHABI">UAE</option>
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            Capital: </td><td><input type="text" class="textbox1" id="sbox2">
+                </td>
+            </tr>
+        </table>
+        </form>
+ 
+        <script>
+            function myFunction()
+            {
+                var a=document.getElementById("sbox1").value;
+                document.getElementById("sbox2").value=a;
+            }
+        </script>
+    </body>
+</html>
