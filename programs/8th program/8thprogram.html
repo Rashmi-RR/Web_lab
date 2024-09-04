@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number in words</title>
+<script language="javascript">
+function convertToWords() {
+    var num = document.forms["f1"].num.value;
+    document.forms["f1"].words.value = "";
+
+    if (isNaN(num)) {
+        alert("Not a Number");
+    } else if (num < 0 || num > 999) {
+        alert("Out of Range");
+    } else {
+        var len = num.length;
+        var words = "";
+
+        for (var i = 0; i < len; i++) {
+            var n = num.substr(i, 1);
+            switch (n) {
+                case '0': words += "Zero "; break;
+                case '1': words += "One "; break;
+                case '2': words += "Two "; break;
+                case '3': words += "Three "; break;
+                case '4': words += "Four "; break;
+                case '5': words += "Five "; break;
+                case '6': words += "Six "; break;
+                case '7': words += "Seven "; break;
+                case '8': words += "Eight "; break;
+                default: words += "Nine ";
+            }
+        }
+        document.forms["f1"].words.value = words;
+    }
+}
+
+function convertToNumber() {
+    var words = document.forms["f1"].words.value;
+    var number = "";
+
+    var wordsArray = words.trim().split(" ");
+    for (var i = 0; i < wordsArray.length; i++) {
+        switch (wordsArray[i]) {
+            case 'Zero': number += "0"; break;
+            case 'One': number += "1"; break;
+            case 'Two': number += "2"; break;
+            case 'Three': number += "3"; break;
+            case 'Four': number += "4"; break;
+            case 'Five': number += "5"; break;
+            case 'Six': number += "6"; break;
+            case 'Seven': number += "7"; break;
+            case 'Eight': number += "8"; break;
+            case 'Nine': number += "9"; break;
+        }
+    }
+    document.forms["f1"].num1.value = number;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<center><h3>NUMBER IN WORDS</h3></center>
+<br/>
+<center>Enter a Number :<input type="text" name="num"></input><br/></center>
+<br/>
+<center><input type="button" name="inwords" value="In Words" onclick="convertToWords()"></input></center>
+<br/><br/><center>Number in Words :<input type="text" name="words"></input></center>
+<br/>
+<center><input type="button" name="tonum" value="To Number" onclick="convertToNumber()"></input></center>
+
+<center>Enter a Number :<input type="text" name="num1"></input><br/></center>
+<br/>
+</form>
+</body>
+</html>
