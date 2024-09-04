@@ -1,0 +1,12 @@
+body {
+    background-color: goldenrod;
+}
+h1 {
+    color:wheat;
+    text-align: center;
+    background-color: mediumaquamarine;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}

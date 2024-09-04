@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    .p1 {
+  color: aqua;
+  font-size: 25px ;
+  font-family: verdana;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  font-style: italic;
+} 
+.p2 {
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-size: 200%;
+    color: greenyellow;
+}
+    body {
+    background-image: url("https://thewell.unc.edu/wp-content/uploads/sites/1007/2021/01/snowflakes.1200x675.shutterstock-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h1 {
+        text-align: center;
+        font-size: 300%;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: white;
+        text-decoration: overline underline;
+        font-variant: small-caps;
+    }
+    p.bg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300%;
+    font-style: italic;
+    color:blue;
+    background-image: url("https://media.istockphoto.com/id/1343488861/video/snowflakes-falling-animation-in-alpha-channel-transparent-background.jpg?s=640x640&k=20&c=0juv9nkvVyEGL-3PIeEKtEfKn79zg7PjyftXU7FDVCs=");
+}     
+a:link{
+    color: red;
+    font-weight: bold;
+    font-size: 200%;
+}
+a:active{
+    color: coral;
+}
+a:visited{
+    color: gold;
+}
+a:hover{
+    color: pink;
+}
+.grey-box {
+    position: relative;
+    z-index: 1;
+    border: 5px solid black;
+    background-color:grey;
+    height: 120px;
+    margin: 50px;
+}
+.pink-box {
+    position: relative;
+    z-index: 2;
+    border: 5px dotted hotpink;
+    background-color: pink;
+    height: 120px;
+    width: 75%;
+    bottom: 80px;
+    left: 200px;
+}
+.hlink {
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>My 2nd program using CSS</h1>
+<p class="bg">Using different CSS styles</p>
+<div class="p1">Snow comprises individual ice crystals that grow while suspended in the atmosphere, usually within clouds—and then fall, accumulating on the ground where they undergo further changes.</div>
+<div class="p2">Line through text in green</div>
+<p><a href="https://en.wikipedia.org/wiki/Snow" target="_blank" class="hlink">CLICK HERE FOR MORE INFO ON SNOW</a></p>
+<div class="container">
+<div class="grey-box">Grey-box z-index 1</div>
+<div class="pink-box">Pink-box z-index 2</div>
+</div>
+</body>
+</html>
